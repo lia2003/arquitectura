@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    // Definir un arreglo de números
+    int numeros[] = {1, 2, 3, 4, 5};
+
+    // Calcular la cantidad de números en el arreglo
+    int cantidad = sizeof(numeros) / sizeof(numeros[0]);
+
+    // Calcular la suma de los números
+    int suma = 0;
+    for (int i = 0; i < cantidad; i++) {
+        suma += numeros[i];
+    }
+
+    // Calcular la media
+    float media = (float)suma / cantidad;
+
+    // Imprimir la media
+    printf("La media aritmética es: %.2f\n", media);
+
+    return 0;
+}
